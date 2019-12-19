@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#EAEAEA"
+tools:context=".Reservation.Reservation_Locker_Activity"
+android:gravity="center"
+android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+
+
+<ImageView
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:src="@drawable/icon_nfc2"/>
+
+
+<TextView
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textColor="#363636"
+    android:text="원하는 보관함에 태그를 해주세요."
+    android:textSize="26dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

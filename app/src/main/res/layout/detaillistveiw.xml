@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/list_border"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/text_date"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:text="2019-11-09 13:21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+    <TextView
+        android:id="@+id/text_loction"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:gravity="center|left"
+        android:text="배송할 터미널에 도착하였습니다 오아오아오아이아이아이아"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>

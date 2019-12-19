@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item
+        android:id="@+id/navigation_menu1"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="상품 조회" />
+
+    <item
+        android:id="@+id/navigation_menu2"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="내정보 보기" />
+
+    <item
+        android:id="@+id/navigation_menu3"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="택배예약" />
+
+    <item
+        android:id="@+id/navigation_menu4"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="환불신청" />
+
+    <item
+        android:id="@+id/navigation_menu5"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="택배조회" />
+</menu>

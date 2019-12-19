@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.myapplicationmin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="스마트 택배함"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DeliveryList.Search_Activity" />
+        <activity android:name=".DeliveryList.DeliveryDetail_Activity" />
+        <activity android:name=".DeliveryList.DeliveryList_Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NONO.Login_Activity" />
+        <activity android:name=".Reservation.Reservation_Activity" />
+        <activity android:name=".NONO.test" />
+        <activity android:name=".Reservation.Refund_Activity" />
+        <activity android:name=".NONO.Res_chk_Activity" />
+        <activity android:name=".Menu_Activity" />
+        <activity android:name=".mymenu.MyMenu_Activity" />
+        <activity android:name=".NONO.Locker_Activity" />
+        <activity android:name=".mymenu.LockerNFC_Activity" />
+        <activity android:name=".mymenu.LockerPass_Activity" />
+        <activity android:name=".NONO.ListViewActivity" />
+        <activity android:name=".NONO.DetailActivity" />
+        <activity android:name=".DeliveryList.SE_DeliveryList_Activity" />
+        <activity android:name=".Reservation.Reservation_Locker_Activity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

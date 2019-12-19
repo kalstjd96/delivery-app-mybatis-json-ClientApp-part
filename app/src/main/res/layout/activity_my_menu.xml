@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+
+    android:background="#EAEAEA"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".mymenu.MyMenu_Activity">
+
+    <TextView
+        android:paddingTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#363636"
+        android:textSize="25dp"
+        android:text="회원 정보"/>
+
+    <!-- 테두리-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:background="@drawable/thinbottom_border"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="아이디"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="이름"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/NAME"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="핸드폰"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/PHONE"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="이메일"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/EMAIL"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="생일"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/BIRTH"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="우편번호"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ADDR1"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="기본주소" />
+
+            <TextView
+                android:id="@+id/ADDR2"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="2dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/thinbottom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="상세주소"
+                android:textSize="15dp"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ADDR3"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/material_light_blue_accent_700"
+        android:background="@drawable/blue_border"
+        android:id="@+id/logout"
+        android:text="로그아웃"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 보관함"
+        android:textColor="#363636"
+        android:textSize="25dp" />
+
+    <!--보관함구역-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+
+        <!--보관함에 없을때-->
+        <LinearLayout
+            android:id="@+id/locker_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="보관된 상품이 없습니다."
+                android:textColor="#000000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!--있을때 보관함 및 상품정보-->
+        <LinearLayout
+            android:id="@+id/locker_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/locker_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="경기도 화성시 XX동 XX아파트101동 1번 사물함"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <ListView
+                android:id="@+id/my_list"
+                android:dividerHeight="2dp"
+                android:divider="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:textColor="@color/material_light_blue_accent_700"
+                android:background="@drawable/blue_border"
+                android:id="@+id/btn_lockeropen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="열기" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="planet_prompt">Choose a planet</string>
+
+    <string-array name="planets_array">
+
+        <item>선택해주세요.</item>
+        <item>CJ대한통운</item>
+        <item>로젠택배</item>
+        <item>한진택배</item>
+        <item>롯데택배</item>
+        <item>우체국택배</item>
+        <item>CU편의점택배</item>
+        <item>경동택배</item>
+
+
+    </string-array>
+
+    <string-array name="wight_array">
+        <item>선택해주세요.</item>
+        <item>극소 (80cm, 2kg)</item>
+        <item>소 (100cm, 5kg)</item>
+        <item>중 (120cm, 15kg)</item>
+        <item>대 (160cm, 25kg)</item>
+    </string-array>
+
+    <string-array name="fare_array">
+        <item>선택해주세요.</item>
+        <item>선불</item>
+        <item>착불</item>
+    </string-array>
+
+</resources>

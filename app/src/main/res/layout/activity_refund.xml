@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--운송장조회버튼-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:padding="10dp"
+                android:background="@drawable/thin_border"
+                android:id="@+id/edit_num"
+                android:hint="운송장 번호"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="@color/material_light_blue_accent_700"
+                android:background="@drawable/blue_border"
+                android:id="@+id/btn_num"
+                android:text="조회"
+                android:textSize="20dp"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#363636"
+            android:textSize="25dp"
+            android:text="보내는분"/>
+        <!--보내는분 테두리-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <!--이름-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_send_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_send_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--전화번호-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_send_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화번호"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_send_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+
+            <!--주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_send_addr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="우편번호"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_send_addr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!--시군구-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_send_addr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기본주소"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_send_addr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--상세주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_send_addr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세주소"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_send_addr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--배송문의-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_req"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="요청사항"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#363636"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="받는 분"
+            android:layout_marginLeft="10dp"/>
+
+        <!--받는분 테두리-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/border">
+
+            <!--이름-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_recv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_recv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!--전화번호-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_recv_phone"
+                    android:text="전화번호"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_recv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+
+            <!--주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_recv_addr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="우편번호"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_recv_addr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!--시군구-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_recv_addr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기본주소"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_recv_addr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--상세주소-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_recv_addr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세주소"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_recv_addr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="상품정보"
+            android:textColor="#363636"
+            android:layout_marginLeft="10dp"/>
+        <!--상품정보 테두리-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <!--상품이름-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상품이름"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--상품가격-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상품가격"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:enabled="false"
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:id="@+id/edit_product_price"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--상품크기-->
+            <LinearLayout
+                android:textColor="#6C6C6C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_wight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상품크기"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:background="@drawable/thin_no_border"
+                    android:id="@+id/edit_product_wight"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <!--운임비용-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_fare_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="운임비용"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:background="@drawable/thin_border"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp"
+                    android:text="0"
+                    android:id="@+id/edit_product_fare_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--운임구분-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="운임구분"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:background="@drawable/thin_no_border"
+                    android:id="@+id/edit_product_fare"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <!--회사-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:textColor="#6C6C6C"
+                    android:id="@+id/text_product_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배송회사"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:background="@drawable/thin_no_border"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:prompt="@string/planet_prompt" />
+            </LinearLayout>
+
+            <!--
+                        &lt;!&ndash;방문희망일&ndash;&gt;
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="방문희망일"
+                                android:textSize="25dp" />
+
+                            <Button
+                                android:id="@+id/btn_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="날짜선택" />
+
+                            <TextView
+                                android:id="@+id/text_send_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+            -->
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textColor="@color/material_light_blue_accent_700"
+            android:background="@drawable/blue_border"
+            android:id="@+id/btn_reservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예약신청" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    tools:context=".DeliveryList.Search_Activity">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="#363636"
+        android:textSize="30dp"
+        android:text="운송장번호 조회"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginBottom="5dp"
+        android:padding="20dp"
+        android:textSize="23dp"
+        android:background="@drawable/thin_border"
+        android:id="@+id/edt_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="운송장번호를 입력해주세요."/>
+    <Button
+        android:textColor="@color/material_light_blue_accent_700"
+        android:background="@drawable/blue_border"
+        android:id="@+id/btn_search"
+        android:text="조회"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"/>
+</LinearLayout>
